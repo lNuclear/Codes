@@ -1,0 +1,22 @@
+def tiempo():
+    tiempo = (distancia / velocidad) 
+    return tiempo
+
+print("\n1.- Metros\n2.- Kilometros")
+dist = int(input())
+
+print("\nCuanta distancia vas a recorrer?")
+distancia = int(input())
+
+if dist == 2:
+    mts = distancia * 1000
+elif dist == 1:
+    mts = distancia
+
+print("\nA que velocidad lo haras?")
+velocidad = int(input())
+
+if dist == 2:
+    print(f"\nEl tiempo para recorrer {mts} kilometros a una velocidad de {velocidad}m/s es igual a:\n{tiempo()} segundos")
+else:
+    print(f"\nEl tiempo para recorrer {mts} metros a una velocidad de {velocidad}m/s es igual a:\n{tiempo()} segundos")
