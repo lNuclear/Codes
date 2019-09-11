@@ -1,0 +1,42 @@
+correcto = True
+opciones = (1,2,3)
+
+while(correcto):
+    print("\nSelecciona una opcion para continuar\n")
+    print("1.- Multiplicacion")
+    print("2.- Resta")
+    print("3.- Suma")
+    Inicio = int(input())
+
+    if Inicio in opciones:
+        correcto = False 
+        if Inicio == 1:
+            print("\nIntroduce el numero que vas a multiplicar")
+            Num1 = int(input())
+            print("\nPor que numero lo vas a multplicar?")
+            Num2 = int(input())
+            Resul = (Num1*Num2)
+            print(f"\nEl resultado es {Resul}\n")
+            break
+        
+        elif Inicio == 2:
+            print("\nIntroduce el numero que vas a restar")       
+            Num1 = int(input())
+            print("\nPor que numero lo vas a restar?")
+            Num2 = int(input())
+            Resul = (Num1-Num2)
+            print(f"\nEl resultado es {Resul}\n")
+            break
+
+        elif Inicio == 3:
+            print("\nIntroduce el numero que vas a sumar")       
+            Num1 = int(input())
+            print("\nPor que numero lo vas a sumar?")
+            Num2 = int(input())
+            Resul = (Num1+Num2)
+            print(f"\nEl resultado es {Resul}")
+            break
+    else:
+        print("\nEsa no es una opcion valida\n")
+        correcto = True
+    
