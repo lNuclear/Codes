@@ -1,0 +1,12 @@
+correcto = True
+
+while(correcto):
+    print("\nDame un numero del 1 al 100")
+    Num = int(input())
+    if Num < 100:
+        correcto = False
+        print("\nEse numero es menor a 100")
+    else:
+        print("\nEse numero es mayor a 100, Intenta de nuevo")
+        correcto = True
+    
