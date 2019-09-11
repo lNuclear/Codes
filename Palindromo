@@ -1,0 +1,11 @@
+print("Introduce una palabra")
+word = str(input())
+
+word = word.casefold()
+
+rev_word = reversed(word)
+
+if list(word) == list(rev_word):
+   print("Es un palindromo")
+else:
+   print("No es un palindromo")
