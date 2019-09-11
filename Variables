@@ -1,0 +1,6 @@
+print("Dame un dato")
+
+Dato = input()
+
+print("\nEste es tu dato")
+print(Dato)
