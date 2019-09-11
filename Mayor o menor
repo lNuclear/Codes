@@ -1,0 +1,10 @@
+print("Dame un numero")
+Num1 = input()
+
+print("\nDame otro numero")
+Num2 = input()
+
+if Num1 < Num2:
+    print(f"\n{Num1} es menor que {Num2}")
+else:
+    print(f"\n{Num1} es mayor que {Num2}")
