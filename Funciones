@@ -1,0 +1,41 @@
+base=10
+altura=20
+area=0
+
+# Función que no recibe argumentos, y no retorna valores.
+def FuncionSASR():
+ area=base*altura
+ print(area)
+
+# Función que no recibe argumentos, y retorna valores.
+def FuncionSACR():
+ area=base*altura
+ return area
+
+# Función que recibe argumentos, y no retorna valores.
+def FuncionCASR(b, a):
+ area=b*a
+ print(area)
+
+# Función que recibe argumentos opcionales, y no retorna valores.
+def FuncionCAOSR(b=50, a=30):
+ area=b*a
+ print(area)
+
+# Función que recibe argumentos opcionales, y no retorna valores.
+def FuncionCACR(b, a):
+ area=b*a
+ return area
+
+# Función lambda (anónima). Sería igual que hacer una función que
+# recibiera dos argumentos (z, y) y retornara el resultado de
+# (z*y)
+x=lambda z, y : z * y
+
+print("Cálculo del área de un rectángulo")
+FuncionSASR()
+print(FuncionSACR())
+FuncionCASR(20,30)
+FuncionCAOSR(5)
+FuncionCACR(20,40)
+print(x(100,7))
