@@ -1,0 +1,23 @@
+print("Cual es tu temperatura corporal?")
+temperatura = input()
+
+decimal = temperatura.find(".")
+# .find busca si el numero tiene un punto
+# Si encuentra un punto arroja la posicion en la que se encuentra, ejem: 36.5 tiene el punto en la posicion 2
+# Cuando no encuentra lo que busca arroja un -1
+
+if decimal is -1:
+    temperatura = int(temperatura)
+else:
+    temperatura = float(temperatura)
+
+normal = (36.5,37,37.5)
+
+if temperatura in normal:
+    print("\nTu temperatura corporal es normal")
+elif temperatura < 35:
+    print("\nTienes hipotermia")
+elif temperatura > 35 and temperatura < 36.5:
+    print("\nTu cuerpo esta frio")
+elif temperatura > 37.5:
+    print("\nTienes fiebre")
