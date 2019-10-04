@@ -1,0 +1,80 @@
+#Longitud
+mensaje1 = 'hola' + ' ' + 'mundo'
+print(len(mensaje1))
+Resultado = 10
+# len define el tamaño de la oracion, en este caso 10, contando el espacio
+
+
+#Mensaje al reves
+mensaje = "hola mundo"
+print(list(reversed(mensaje)))
+#reversed() pone alrevez el mensaje y al mismo tiempo lo transforma en una lista con los valores
+
+
+#Palabras al reves
+print("Ingresa una palabra")
+palabra = input()
+palabra = palabra[::-1]
+print(palabra)
+
+
+#Buscar
+mensaje5 = "Hola.Mundo"
+mensaje5a = mensaje5.find(".")
+print(mensaje5a)
+Resultado = 5
+# .find busca la palabra o caracter que se le indica y arroja la posicion en la que se encuentra
+# Si no esta el valor en la cadena arroja -1
+
+
+#Mayusculas las primeras letras
+mensaje7 = "hola mundo"
+mensaje7a = mensaje7.capitalize()
+print(mensaje7a)
+Resultado = "Hola Mundo"
+#.capitalize hace mayusculas las primeras letras de cada palabra despues del espacio
+
+
+#Minusculas
+mensaje7 = "HOLA MUNDO"
+mensaje7a = mensaje7.lower()
+print(mensaje7a)
+Resultado = "hola mundo"
+# .lower hace minusculas todas las palabras de la oracion
+
+
+#Mayusculas
+mensaje8 = "hola mundo"
+mensaje8a = mensaje7.upper()
+print(mensaje7a)
+Resultado = "HOLA MUNDO"
+# .lower hace mayusculas todas las palabras de la oracion
+
+
+#Casefold
+mensaje9 = "Hólà mündö"
+mensaje9a = mensaje8.casefold()
+print(mensaje8a)
+Resultado = "hola mundo"
+#.casefold elimina todos los caracteres distintos de una oracion
+
+
+#Reemplazar
+mensaje8 = "HOLA MUNDO"
+mensaje8a = mensaje7.replace("L", "pizza")
+print(mensaje8a)
+Resultado = "HOpizzaA MUNDO"
+# .replace Remplaza el primer valor antes de la coma "L" con el segundo valor despues de la coma "pizza"
+
+
+#Cortar
+mensaje9 = "Hola Mundo"
+mensaje9a = mensaje9[1:8]
+print(mensaje9a)
+Resultado = "ola Mun"
+# Parte la cadena en los valores que se le piden, de la posicion 1 al 8, El 0 tambien cuenta
+
+
+
+
+
